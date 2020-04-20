@@ -14,7 +14,6 @@ alias mac.hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE &&
 
 alias zsh.edit="open -a Sublime\ Text ~/.zshrc"
 alias zsh.custom="open -a Sublime\ Text ~/.oh-my-zsh/custom/custom.zsh"
-alias zsh.p10k="open -a Sublime\ Text ~/.p10k.zsh"
 
 alias pyserver="python3 -m http.server 8000"
 alias jp="jupyter notebook"
