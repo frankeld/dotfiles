@@ -25,9 +25,6 @@ alias trash="trash -F"
 alias pyserver="python3 -m http.server 8000"
 alias jp="jupyter notebook"
 
-hci=/Users/davidfrankel/Documents/School/Sophomore\ Year/Second\ Semester/CSE\ 256A/Repo/cse256a-s20-david.frankel
-school=/Users/davidfrankel/Documents/School/Sophomore\ Year/Second\ Semester
-
 # Dotfile management
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
