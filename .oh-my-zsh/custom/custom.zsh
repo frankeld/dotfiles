@@ -15,9 +15,10 @@ alias mac.hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE &&
 alias zsh.edit="open -a Sublime\ Text ~/.zshrc"
 alias zsh.custom="open -a Sublime\ Text ~/.oh-my-zsh/custom/custom.zsh"
 
-# Update some plugins
+# Update some plugins/themes
 alias zsh.autosuggest.update="git -C $ZSH_CUSTOM/plugins/zsh-autosuggestions pull"
 alias zsh.syntaxhighlighting.update="git -C $ZSH_CUSTOM/plugins/zsh-syntax-highlighting pull"
+alias zsh.p10k.update="git -C $ZSH_CUSTOM/themes/powerlevel10k pull"
 
 alias trash="trash -F"
 
@@ -31,8 +32,20 @@ school=/Users/davidfrankel/Documents/School/Sophomore\ Year/Second\ Semester
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+# p10k
+alias zsh.p10k="open -a Sublime\ Text ~/.p10k.zsh"
+alias zsh.p10k.custom="open -a Sublime\ Text ~/.oh-my-zsh/custom/p10kcustom.zsh"
+
+colorfun() {
+	for i in {0..255};
+	do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'};
+	done
+}
+
+
 # Expand aliased
-# Will need to fix to correct z issue
+# https://github.com/rothgar/mastering-zsh/blob/master/docs/helpers/aliases.md#automatically-expand-aliases
+# !Will need to fix to correct z issue!
 # globalias() {
 #    zle _expand_alias
 #    zle expand-word
