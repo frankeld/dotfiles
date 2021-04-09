@@ -25,6 +25,8 @@ alias trash="trash -F"
 alias pyserver="python3 -m http.server 8000"
 alias jp="jupyter notebook"
 
+alias zoom="python3 /Users/davidfrankel/zoomlinkparse.py"
+
 # Dotfile management
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
